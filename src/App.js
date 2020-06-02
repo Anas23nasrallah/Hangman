@@ -1,25 +1,19 @@
 import React from 'react';
+import Solution from './components/Solution'
 import logo from './logo.svg';
 import './App.css';
+import Score from './components/Score';
+import Letter from './components/Letter';
+import Letters from './components/Letters';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='game'>
+      < Score />
+      < Solution />
+      < Letters/>
     </div>
+
   );
 }
 
