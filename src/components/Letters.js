@@ -4,10 +4,11 @@ import {Letter} from './Letter'
 
 export class Letters extends Component{
     render(){
+        const letterStatus = this.props.letterStatus
         return (
             <div>
                 <div>Available letters</div>
-                < Letter />
+                {Object.keys(letterStatus).map(l => letterStatus[l] ? <Letter key={l} className="crossed" letter={l} /> : <Letter className="not-crossed" key={l} letter={l} selectLetter={this.props.selectLetter}/>)}
             </div>
         )
     }

@@ -4,7 +4,7 @@ import React from "react";
 export class Score extends Component{
     render(){
         return (
-            <div>100</div>
+            <div>{this.props.score}</div>
         )
     }
 }
